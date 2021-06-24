@@ -1,0 +1,26 @@
+System.register(["./CustomerRepository", "./ProductRepository", "./OrderRepository"], function (exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
+    function exportStar_1(m) {
+        var exports = {};
+        for (var n in m) {
+            if (n !== "default") exports[n] = m[n];
+        }
+        exports_1(exports);
+    }
+    return {
+        setters: [
+            function (CustomerRepository_1_1) {
+                exportStar_1(CustomerRepository_1_1);
+            },
+            function (ProductRepository_1_1) {
+                exportStar_1(ProductRepository_1_1);
+            },
+            function (OrderRepository_1_1) {
+                exportStar_1(OrderRepository_1_1);
+            }
+        ],
+        execute: function () {
+        }
+    };
+});
